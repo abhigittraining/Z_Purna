@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+ 	<listeners>
+		<listener
+			class-name="com.purna_data.libraries.ExtentReportListener"></listener>
+	</listeners>
+  
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="com.purna_data.testcases.purna_logintest"/>
+ <?ignore     <class name="com.purna_data.testcases.purna_customer_test"/>
+ 
+      <class name="com.purna_data.testcases.purna_project_test"/>
+      <class name="com.purna_data.testcases.purna_employee_test"/>
+      <class name="com.purna_data.testcases.purna_inventory_test"/>
+      <class name="com.purna_data.testcases.purna_supplier_test"/>
+?>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

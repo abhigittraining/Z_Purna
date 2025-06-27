@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.purnadata.libraries.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.purnadata.testcases.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="init"/>
+          <include name="loginFailureTest"/>
+        </methods>
+      </class> <!-- com.purnadata.testcases.LoginTest -->
+      <class name="com.purnadata.testcases.SupplierTest">
+        <methods>
+          <include name="createNewSupplierSuccessTest"/>
+          <include name="closeBrowser"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.purnadata.testcases.SupplierTest -->
+      <class name="com.purnadata.testcases.SalesInvoiceTest">
+        <methods>
+          <include name="init"/>
+          <include name="createNewSalesInvoiceSuccessTest"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.purnadata.testcases.SalesInvoiceTest -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
